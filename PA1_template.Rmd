@@ -28,6 +28,7 @@ df.activity.data$date <- as.Date(df.activity.data$date, format = "%Y-%m-%d")
 
 ```{r}
 df.activity.steps_per_day <- aggregate(steps ~ date, data = df.activity.data, sum)
+df.activity.steps_per_day
 hist(df.activity.steps_per_day$steps, xlab="Steps per day", main="Histogram of the total number of steps taken each day")
 ```
 
